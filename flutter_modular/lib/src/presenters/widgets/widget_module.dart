@@ -12,6 +12,9 @@ _debugPrintModular(String text) {
 }
 
 abstract class WidgetModule extends StatelessWidget implements Module {
+  
+  WidgetModule({Key? key}): super(key: key);
+  
   Widget get view;
 
   @override
